@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title id="title"> 
+</title>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+   
+</head>
+
+    
+<style>
+
+/*背景*/
+
+body {
+  background: #222222;
+}
+
+/*链接颜色*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*主体*/
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-left: 5%;
+}
+
+/*书签框架*/
+
+.service-item {
+  display: block;
+  float: left;
+  margin: 60px 80px 0px 0px;
+  width: 135px;
+}
+
+/*图标框架*/
+
+.service-icon-wrap {
+  text-align: center;
+  display: block;
+  height: 135px;
+  margin-bottom: 5px;
+}
+
+/*书签图标*/
+
+.service-icon {
+  width: 135px;
+  height: 135px;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+/*鼠标悬停*/
+
+.service-item:hover .service-icon {
+  transform: scale(1.15);
+}
+
+.service-icon:hover {
+  border-radius: 35px;
+  animation: glow 800ms ease-out infinite alternate;
+  width: 135px;
+  height: 135px;
+  transition: all 0.3s;
+}
+
+/*鼠标按下*/
+
+.service-item:active .service-icon {
+  transition: all 0s;
+  transform: scale(1);
+}
+
+/*鼠标按下保持*/
+
+.service-item:focus .service-icon {
+  transition: all 0s;
+  transform: scale(1);
+}
+
+/*书签字体样式*/
+
+.service-title {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+/*发光样式*/
+	
+@-webkit-keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1);
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4);
+    }
+}
+
+@-moz-keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1);
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4);
+    }
+}
+
+@-o-keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1);
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4);
+    }
+}
+
+@-ms-keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1);
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4);
+    }
+}
+
+@keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1);
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4);
+    }
+}
+
+</style>
+
+<body>
+
+<div class="container">
+
+<a href="https://www.163.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/新闻.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">网易新闻</h3>
+</a>
+
+<a href="https://dig.chouti.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/抽屉.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">抽屉热榜</h3>
+</a>
+
+<a href="https://mo.fish" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/热榜.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">鱼塘头条</h3>
+</a>
+
+<a href="https://weibo.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/微博.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">新浪微博</h3>
+</a>
+
+<a href="http://pan.baidu.com/disk/home#from=share_pan_logo" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/百度云.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">百度网盘</h3>
+</a>
+
+<a href="https://www.smzdm.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/值得.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">什么值得买</h3>
+</a>
+
+<a href="http://www.lkong.net/forum.php?mod=forumdisplay&fid=60&mobile=yes" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/阅读.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">龙空推书</h3>
+</a>
+
+<a href="https://m.xiaohua.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/福利.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">内涵段子</h3>
+</a>
+
+<a href="https://www.ykmh.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/漫画.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">在线漫画</h3>
+</a>
+
+<a href="http://www.bilibili.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/哔哩哔哩.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">哔哩哔哩</h3>
+</a>
+
+<a href="http://bbs.saraba1st.com/2b/forum.php?mod=forumdisplay&fid=75&mobile=2" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/外野.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">S1外野</h3>
+</a>
+
+<a href="https://bbs.nga.cn/thread.php?fid=-7" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/NGA.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">NGA杂谈</h3>
+</a>
+
+<a href="http://www.lookae.com/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/素材.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">视频素材</h3>
+</a>
+
+<a href="http://www.languang.co/" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/电影.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">高清影视</h3>
+</a>
+
+<a href="https://www.52pojie.cn/forum.php?mod=forumdisplay&fid=16&filter=typeid&typeid=231&orderby=dateline" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/吾爱.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">吾爱破解</h3>
+</a>
+
+<a href="https://bbs.imoutolove.me/thread.php?fid-9.html" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/段子.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">魂+茶馆</h3>
+</a>
+
+<a href="https://www.qwewqq.xyz/forum.php?mod=forumdisplay&fid=95&filter=author&orderby=dateline" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/色花堂.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">色花堂</h3>
+</a>
+
+<a href="https://cl.600z.xyz/thread0806.php?fid=7" class="service-item">
+	<span class="service-icon-wrap">
+    <img src="ico/兔子.png" alt="service icon" class="service-icon">
+	</span>
+	<h3 class="service-title">小草社区</h3>
+</a>
+
+</body>
+</html>
